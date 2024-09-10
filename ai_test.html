@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="Cloudsoft Technology Limited">
+	<meta name="description"
+		content="Cloud Tech.提供先進的AI客戶服務解決方案，結合ChatGPT-4的強大AI能力，提供私人資料訂製、即時連接客戶資料庫、精準數據獲取和存儲，以及與Zapier和Make.com的無縫集成。無論是提升客戶滿意度還是優化業務流程，Cloud Tech.都能助您一臂之力。">
+	<meta name="keywords" content="WhatsApp AI, AI客服, WhatsApp自動化, 客服AI, 智能客服, 香港AI客服">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap"
+		rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="css/swiper.css">
+
+	<!-- Niche Demos -->
+	<link rel="stylesheet" href="css/landing-2.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	
+	<link rel="icon" href="images/icon.ico">
+	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16690408936">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'AW-16690408936');// Google Ads
+		gtag('config', 'G-TCBK1Z4XXJ');// Global Site Tag (gtag.js) - Google Analytics
+	</script>
+
+
+	<!-- Document Title
+	============================================= -->
+	<title>Cloud Tech. - 超智能AI客戶服務解決方案</title>
+
+	<script>
+		function updateCarouselItems() {
+			const carousel = document.querySelector('.owl-carousel');
+			if (window.innerWidth >= 768) { // 假设768px以上为大屏幕
+				carousel.setAttribute('data-items', '2');
+			} else {
+				carousel.setAttribute('data-items', '1');
+			}
+		}
+
+		// 页面加载时调用
+		document.addEventListener('DOMContentLoaded', updateCarouselItems);
+
+		// 窗口大小改变时调用
+		window.addEventListener('resize', updateCarouselItems);
+	</script>
+
+</head>
+
+<body class="stretched">
+
+	<flowise-fullchatbot></flowise-fullchatbot>
+	<script type="module">
+		import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+		Chatbot.initFull({
+			chatflowid: "39683260-2853-44df-b5bb-7515cf683702",
+			apiHost: "https://flowise-production-37ca.up.railway.app",
+			theme: {
+				tooltip: {
+					showTooltip: true,
+					tooltipMessage: 'Cloud Tech. 多AI客戶',
+					tooltipBackgroundColor: 'black',
+					tooltipTextColor: 'white',
+					tooltipFontSize: 16,
+				},
+				chatWindow: {
+					showTitle: true,
+					title: 'Cloud Tech. 多AI客戶',
+					// titleAvatarSrc: 'https://.png',
+					welcomeMessage: '你好，請問有什麼可以幫到你？',
+					errorMessage: '發生錯誤！請稍後再試一次。',
+					backgroundColor: '#ffffff',
+					fontSize: 16,
+					botMessage: {
+						backgroundColor: '#DDDDDD',
+						textColor: '#3D3D3D',
+						showAvatar: true,
+						// avatarSrc: 'https://.png',
+					},
+					userMessage: {
+						backgroundColor: '#ffffff',
+						textColor: '#3D3D3D',
+						showAvatar: true,
+						// avatarSrc: 'https://avatar.png',
+					},
+					textInput: {
+						placeholder: '輸入信息',
+						backgroundColor: '#ffffff',
+						textColor: '#303235',
+						sendButtonColor: '#3D3D3D',
+						maxChars: 2000,
+						maxCharsWarningMessage: '不可超过2000个字符',
+						autoFocus: true, // If not used, autofocus is disabled on mobile and enabled on desktop. true enables it on both, false disables it on both.
+					},
+					feedback: {
+						color: '#303235',
+					},
+					footer: {
+						textColor: '#303235',
+						text: 'Powered by',
+						company: 'Cloudsoft Tech.',
+						companyLink: 'https://web.cloudsoft.ltd/images/logo.jpg',
+					},
+				},
+			},
+		})
+	</script>
+
+
+
+
+</body>
+
+</html>
